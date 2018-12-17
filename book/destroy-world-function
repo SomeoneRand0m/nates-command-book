@@ -1,0 +1,6 @@
+tellraw @s 
+{"text":"Please click here to confirm, that you would, in fact, like to destroy this world.",
+"color":"dark_red",
+"underlined":"true",
+"hoverEvent":{"action":"show_text","value":"Once you click this message, it will place an always active Repeating Command Block that contains \"/kill @e\" inside the prompt, thus destroying the world."},
+"clickEvent":{"action":"run_command","value":"/setblock ~ ~ ~ minecraft:repeating_command_block{Command:\"/kill @e\",auto:1b} replace"}}
