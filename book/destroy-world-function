@@ -1,3 +1,4 @@
+#must be compressed in order to work
 tellraw @s 
 {"text":"Please click here to confirm, that you would, in fact, like to destroy this world.",
 "color":"dark_red",
