@@ -1,0 +1,6 @@
+#despawn_hostile_01
+difficulty peaceful
+schedule function nates:book/despawn_hostiles_02 2t
+
+#despawn_hostiles_02
+difficulty normal
