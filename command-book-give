@@ -1,5 +1,6 @@
-give @s minecraft:written_book{display:{
-Name:"[{\"text\":\"...\",\"color\":\"aqua\",\"italic\":false,\"strikethrough\":true,\"obfuscated\":true},
+give @s minecraft:written_book{display:
+
+{Name:"[{\"text\":\"...\",\"color\":\"aqua\",\"italic\":false,\"strikethrough\":true,\"obfuscated\":true},
 {\"text\":\"N\",\"color\":\"white\",\"strikethrough\":false,\"obfuscated\":false},
 {\"text\":\"a\",\"color\":\"dark_aqua\",\"bold\":true,\"strikethrough\":false,\"obfuscated\":false},
 {\"text\":\"t\",\"strikethrough\":false,\"obfuscated\":false},
@@ -407,14 +408,21 @@ pages:[
 "[{\"text\":\"\"},
 {\"text\":\"Miscellaneous:\",\"bold\":true,\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"value\":\"Back to Table of contents\"},
 \"clickEvent\":{\"action\":\"change_page\",\"value\":\"1\"}},
-{\"text\":\"\\nKill:\",\"color\":\"dark_red\",\"hoverEvent\":{\"action\":\"show_text\",\"value\":\"Various selectors for /kill\"}},
-{\"text\":\"\\n@e\",\"color\":\"red\",\"hoverEvent\":{\"action\":\"show_text\",\"value\":\"Kills all entities, not recommended in just about any scenario.\"},
-\"clickEvent\":{\"action\":\"change_page\",\"value\":\"/kill @e\"}},
-{\"text\":\"\\n@a\",\"color\":\"dark_red\",\"hoverEvent\":{\"action\":\"show_text\",\"value\":\"Kills all players, also not recommended because it will kill you, too.\"},
-\"clickEvent\":{\"action\":\"change_page\",\"value\":\"/kill @a\"}},
-{\"text\":\"\\n@s\",\"color\":\"red\",\"hoverEvent\":{\"action\":\"show_text\",\"value\":\"Kills the sender of the command, you are the sender. Can you guess what happens next?\"},
-\"clickEvent\":{\"action\":\"change_page\",\"value\":\"/kill @s\"}},
-{\"text\":\"\\n@e[...]\",\"color\":\"dark_red\",\"hoverEvent\":{\"action\":\"show_text\",\"value\":\"@e[type=!minecraft:player] Kills everything but players, good if you don't have any paintings and such, and just disabled mob spawning.\"}}]",
+{\"text\":\"\\nKill:\",\"color\":\"dark_red\",\"bold\":true,\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"value\":\"Various selectors for /kill\"}},
+{\"text\":\"\\nAll entities\",\"color\":\"red\",\"hoverEvent\":{\"action\":\"show_text\",\"value\":\"Not recommended in just about any scenario.\"},
+\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/kill @e\"}},
+{\"text\":\"\\nAll players\",\"color\":\"dark_red\",\"hoverEvent\":{\"action\":\"show_text\",\"value\":\"Also not recommended because it will kill you, too.\"},
+\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/kill @a\"}},
+{\"text\":\"\\nThe sender (You)\",\"color\":\"red\",\"hoverEvent\":{\"action\":\"show_text\",\"value\":\"Kills the sender of the command, you are the sender. Can you guess what happens next?\"},
+\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/kill @s\"}},
+{\"text\":\"\\nAll but players\",\"color\":\"dark_red\",\"hoverEvent\":{\"action\":\"show_text\",\"value\":\"Good if you don't have any paintings and such, and just disabled mob spawning.\"},
+\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/kill @e[type=!minecraft:player]\"}},
+{\"text\":\"\\nAll items\",\"color\":\"red\",\"hoverEvent\":{\"action\":\"show_text\",\"value\":\"Good for clearing lag without disturbing the wildlife.\"},
+\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/kill @e[type=minecraft:item]\"}},
+{\"text\":\"\\n\\nDespawn hostiles\",\"color\":\"dark_green\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"value\":\"Despawns all hostile mobs by changing the difficulty to Peaceful, then back to Normal 2 ticks later.\"},
+\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/function nates:book/despawn_hostiles_01\"}},
+{\"text\":\"\\n\\nDestroy world\",\"color\":\"dark_red\",\"bold\":true,\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"value\":\"This command will destroy the world.\"},
+\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/function nates:book/destroy_world\"}}]",
 
 
 "[{\"text\":\"\"},
