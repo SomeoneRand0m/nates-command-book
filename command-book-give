@@ -14,7 +14,7 @@ Lore:[
 "{\"text\":\"Contains a bunch of commonly used\"}",
 "{\"text\":\"commands to run so you don't\"}",
 "{\"text\":\"have to type them in!\"}",
-"{\"text\":\"v0.4 Function Edition\",\"color\":\"dark_gray\",\"italic\":false}"]},
+"{\"text\":\"v0.4.1 Function Edition\",\"color\":\"dark_gray\",\"italic\":false}"]},
 title:"",
 author:"Nate's™",
 generation:3,
@@ -420,7 +420,7 @@ pages:[
 {\"text\":\"\\nAll items\",\"color\":\"red\",\"hoverEvent\":{\"action\":\"show_text\",\"value\":\"Good for clearing lag without disturbing the wildlife.\"},
 \"clickEvent\":{\"action\":\"run_command\",\"value\":\"/kill @e[type=minecraft:item]\"}},
 {\"text\":\"\\n\\nDespawn hostiles\",\"color\":\"dark_green\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"value\":\"Despawns all hostile mobs by changing the difficulty to Peaceful, then back to Normal 2 ticks later.\"},
-\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/function nates:book/despawn_hostiles_01\"}},
+\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/function nates:book/despawn_hostiles\"}},
 {\"text\":\"\\n\\nDestroy world\",\"color\":\"dark_red\",\"bold\":true,\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"value\":\"This command will destroy the world.\"},
 \"clickEvent\":{\"action\":\"run_command\",\"value\":\"/function nates:book/destroy_world\"}}]",
 
